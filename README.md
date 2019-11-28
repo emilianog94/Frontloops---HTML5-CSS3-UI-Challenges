@@ -5,4 +5,4 @@ Resolución a todos los desafíos de HTML y CSS de Frontloops sin frameworks, ut
 
 Step 1 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step1/ <br/>
 Step 2 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step2/ <br/>
-Step 2 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step3/ <br/>
+Step 3 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step3/ <br/>
