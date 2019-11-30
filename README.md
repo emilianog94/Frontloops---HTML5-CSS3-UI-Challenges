@@ -3,8 +3,8 @@ Resolución a todos los desafíos de HTML y CSS de Frontloops sin frameworks, ut
 
 ### LOOP 1
 
-Step 1 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step1/ <br/>
-Step 2 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step2/ <br/>
-Step 3 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step3/ <br/>
-Step 4 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step4/ <br/>
-Step 5 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step5/ <br/>
+Step 1 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step1/index.html <br/>
+Step 2 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step2/index.html <br/>
+Step 3 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step3/index.html <br/>
+Step 4 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step4/index.html <br/>
+Step 5 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step5/index.html <br/>
