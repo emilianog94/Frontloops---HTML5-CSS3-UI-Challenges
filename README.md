@@ -7,3 +7,4 @@ Step 1 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step1
 Step 2 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step2/ <br/>
 Step 3 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step3/ <br/>
 Step 4 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step4/ <br/>
+Step 5 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step5/ <br/>
