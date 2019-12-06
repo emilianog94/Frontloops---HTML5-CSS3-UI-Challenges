@@ -12,4 +12,4 @@ Step 6 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step6
 Step 7 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step7/index.html <br/>
 Step 8 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step8/index.html <br/>
 Step 9 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step9/index.html <br/>
-Step 10 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step10/index.html <br/>
+Step 10 - https://emilianog94.github.io/frontloops-markup-challenges/Loop01/Step10/index.html  <br/>
