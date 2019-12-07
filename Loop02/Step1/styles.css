@@ -1,0 +1,255 @@
+body{
+    overflow-x:hidden;
+}
+
+*{
+    font-family:'Roboto',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.contenedor-principal{
+    width:100%;
+    min-height:100vh;
+    background-color:#DE8A89;
+    display:flex;
+    justify-content:center;
+
+}
+
+.contenedor-sec{
+    width:90%;
+}
+
+.selector-tela{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.descripcion-tela{
+    margin-top:30px;
+}
+
+.descripcion-tela p{
+    color:#fff;
+    font-weight:400;
+    font-size:1.1em;
+    line-height:1.5em;
+    width:70%;
+}
+
+.selector-tela h2:first-child{
+    margin-left:0;
+}
+
+.selector-tela h2{
+    margin-left:0px;
+}
+
+.slider{
+    margin-top:50px;
+    position:relative;
+}
+
+
+
+.instrucciones-tela{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+.instrucciones-tela:after,.instrucciones-tela:before{
+    display:none;
+}
+
+.instrucciones-tela .col{
+    flex-basis:0;
+    flex-grow:1;
+    width:100%;
+    padding:40px;
+    min-height:auto;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+p.title{
+    color:#DE8A89;
+    font-size:1.5em;
+}
+
+p.data{
+    color:#fff;
+    margin-top:10px;
+    font-size:2.5em;
+    font-weight:bold;
+}
+
+.instrucciones-tela .col:first-child{
+    background-color:#3E3C3D;
+    position:relative;
+}
+
+.instrucciones-tela .col:nth-child(2){
+    background-color:#353334;
+}
+
+.instrucciones-tela .col:last-child{
+    background-color:#201E1F;
+}
+
+.cta{
+    position:absolute;
+    bottom:-25px;
+    left:10%;
+    width:80%;
+    background-color:#131313;
+    border-radius:5px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    transition:all 0.25s ease;
+}
+
+.cta#desktop{
+    display:none;
+}
+
+.cta#mobile{
+    position:static;
+    display:block;
+    width:100%;
+    background-color:#131313;
+    border-radius:5px;
+    padding-top:20px;
+    margin-top:30px;
+    padding-bottom:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    transition:all 0.25s ease;
+}
+
+.cta:hover{
+    bottom:-18px;
+}
+
+
+
+
+h2{
+    font-size:2em;
+    color:rgba(255,255,255,0.5);
+    transition:all 0.25s ease;
+    cursor:pointer;
+}
+
+h2:hover{
+    color:rgba(255,255,255,0.75)
+}
+
+h2.active{
+    color:rgba(255,255,255,1);
+}
+
+
+@media screen and (min-width:768px){
+
+    .contenedor-sec{
+        width:60%;
+    }
+
+    .selector-tela{
+        flex-direction:row;
+        flex-wrap:nowrap;
+        margin-top:150px;
+    }
+
+
+    .selector-tela h2:first-child{
+        margin-left:0;
+    }
+    
+    .selector-tela h2{
+        margin-left:30px;
+    }
+
+    h2{
+        font-size:6em;
+    }
+
+    .descripcion-tela{
+        margin-top:0px;
+    }
+
+
+    .instrucciones-tela{
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .instrucciones-tela .col{
+        flex-basis:0;
+        flex-grow:1;
+        padding:80px;
+        min-height:350px;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    .instrucciones-tela:before{
+        content:"◀";
+        display:inline-block;
+        text-align:center;
+        width:100px;
+        padding-top:45px;
+        padding-bottom:45px;
+        background-color:rgba(255,255,255,0.5);
+        color:rgba(0,0,0,0.5);
+        position:absolute;
+        left:-100px;
+        top:0;
+        cursor:pointer;
+        transition:all 0.25s ease;
+        z-index:2;
+    }
+    
+    .instrucciones-tela:after{
+        content:"▶";
+        display:inline-block;
+        text-align:center;
+        width:100px;
+        padding-top:45px;
+        padding-bottom:45px;
+        background-color:rgba(255,255,255,0.5);
+        color:rgba(0,0,0,0.5);
+        position:absolute;
+        right:-100px;
+        top:0;
+        cursor:pointer;
+        transition:all 0.25s ease;
+        z-index:2;
+    }
+    
+    
+    .instrucciones-tela:hover::before,.instrucciones-tela:hover::after{
+        background-color:rgba(255,255,255,0.75);
+    }
+
+    .cta#mobile{
+        display:none;
+    }
+
+}
