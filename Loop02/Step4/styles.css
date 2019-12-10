@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Roboto',sans-serif;
+}
+
+.contenedor-principal{
+    width:100%;
+    min-height:100vh;
+    background-color:#55557E;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.selector{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.selector .ico-container:first-child{
+    margin-right:1px;
+}
+
+.selector .ico-container:last-child{
+    margin-left:1px;
+}
+
+.ico-container{
+    background-color:rgba(0,0,0,0.25);
+    margin-top:20px;
+    padding:15px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:all 0.25s ease;
+}
+
+.ico-container:hover{
+    background-color:rgba(0,0,0,0.5);
+    cursor:pointer;
+
+}
+
+.active{
+    background-color:#252525;
+    height:50px;
+    width:60px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+    }
+
+
+.contenedor-card{
+    background-color:#fff;
+    border-radius:4px;
+    margin-top:20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+
+}
+
+.card{
+    width:90%;
+    padding:20px 0;
+
+}
+
+.card .imagen{
+    background-image:url('img/food.jpg');
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.15);
+    min-height:140px;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:15px;
+}
+
+.imagen span{
+    font-size:0.85em;
+}
+
+span img{
+    width:15px;
+}
+
+.imagen p{
+    display:inline;
+}
+
+.ico-container.active img{
+    opacity:1;
+}
+
+
+.ico-container img{
+    opacity:0.5;
+}
+
+.item{
+    color:#A9ADB3;
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    border-bottom:1px solid #ccc;
+    cursor:pointer;
+    line-height:1em;
+}
+
+.item .price{
+    font-weight:bold;
+    transition:all 0.25s ease;
+    flex-basis:75%;
+    text-align:right;
+
+}
+
+.item .price:hover{
+    color:#252525;
+    font-size:1.2em;
+}
+
+@media screen and (min-width:768px){
+    .card{
+        width:30%;
+    
+    }
+
+    .ico-container{
+
+        margin-top:0;
+
+
+    }
+
+}
+
+
+
+@media screen and (min-width:996px){
+    .card{
+        width:30%;
+    
+    } 
+}
+
+@media screen and (min-width:1196px){
+    .card{
+        width:20%;
+    
+    } 
+}
