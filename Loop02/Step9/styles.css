@@ -1,0 +1,242 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Roboto',sans-serif;
+}
+
+.contenedor-principal{
+    background:linear-gradient(90deg, #4677F6 0%, #3F6CF7 100%);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px 0;
+
+}
+
+.card{
+    width:95%;
+    box-sizing:border-box;
+    padding:20px 20px 0px 20px;
+    background:#fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.card-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-weight:500;
+    margin-top:10px;
+}
+
+
+.card-header img{
+    opacity:0.4;
+    cursor:pointer;
+    transition: .4s;
+}
+
+.card-header img:hover{
+    opacity:1;
+}
+
+.card-map{
+    position:static;
+    background:url('img/map.png');
+    box-shadow:inset 0 0 0 2000px rgba(70,119,246, 0.75), 
+    0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    border-radius:5px;
+    width:100%;
+    left:none;
+    transform:none;
+    color:#fff;
+    box-sizing:border-box;
+    padding:30px 40px;
+    margin-top:20px;
+    height:150px;
+}
+
+.boton{
+    position:static;
+    right:none;
+    bottom:none;
+    border-radius:5px;
+    background-color:rgba(70,119,246,1);
+    margin-top:15px;
+    padding:10px;
+    cursor:pointer;
+    box-shadow:    0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    transition:.2s;
+}
+
+.boton:hover{
+    background-color:rgba(70,119,246,0.9);
+}
+
+.boton a{
+    color:#fff;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+}
+
+.card-map p{
+    font-weight:500;
+}
+
+.card-map-trayecto{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.card-map-datos{
+    display:flex;
+    margin-top:30px;
+    justify-content: space-between;
+}
+
+.card-map-trayecto .linea{
+    width:100%;
+    height:2px;
+    flex-grow:2;
+    background:linear-gradient(90deg,rgba(255,255,255,1) 25% , rgba(255,255,255,0.5) 20%);
+    margin:0 15px;
+    position:relative;
+}
+
+.linea img{
+    position:absolute;
+    left:20%;
+    width:20px;
+    top:-25px;
+}
+
+.card-map-trayecto .linea:before{
+    content:"";
+    width:10px;
+    height:10px;
+    display:block;
+    border-radius:100%;
+    background-color:#fff;
+    position: relative;
+    top: -4px;
+    left: -1px;
+}
+
+.card-map-trayecto .linea:after{
+    content:"";
+    width:10px;
+    height:10px;
+    display:block;
+    border-radius:100%;
+    background-color:#fff;
+    position: absolute;
+    top: -4px;
+    right: -1px;
+}
+
+.card-instructions{
+    display:flex;
+    flex-direction:column;
+    margin-top:30px;
+}
+
+.card-instructions .city-title{
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.card-instructions .instruction{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+
+.instruction img{
+    margin-left:5px;
+}
+
+.instruction .instruction-data{
+    margin-left:20px;
+}
+
+.instruction-data p:first-child{
+    color:#ccc;
+    font-size:0.8em;
+}
+
+.instruction-data p:last-child{
+    font-weight:500;
+}
+
+.instruction-map{
+    background-image:url('img/streetview.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:100px;
+    background-position:bottom;
+    position: relative;
+    width: calc(100% + 20px);
+    border-radius:5px;
+}
+
+@media screen and (min-width:768px){
+
+    .card{
+        width:50%;
+        padding:20px 20px 0px 20px;
+
+    }
+    
+    .contenedor-principal{
+        padding:0;
+    }
+
+    .card-map{
+        position:relative;
+        background:url('img/map.png');
+        width:calc(100% + 60px);
+        left:50%;
+        transform:translateX(-50%);
+        padding:30px 40px;
+        margin-top:20px;
+        height:150px;
+    }
+
+    .boton{
+        position:absolute;
+        right:30px;
+        bottom:-20px;
+        border-radius:5px;
+        padding:10px;
+        margin-top:0;
+
+    }
+}
+
+@media screen and (min-width:1192px){
+    .card{
+        width:23%;
+        padding:20px 20px 0px 20px;
+
+    }    
+}
