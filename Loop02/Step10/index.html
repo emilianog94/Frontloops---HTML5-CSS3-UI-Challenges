@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Challenge</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="contenedor-principal">
+    <div class="contenedor-nav">
+      <div>
+        <nav class="navbar-main">
+          <div class="separador logo">
+            <img src="img/logo.png" alt="">
+          </div>
+          <div class="separador buscador">
+            <input type="text" placeholder="Search">
+          </div>
+
+          <div class="separador menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Connections</a></li>
+              <li><a href="#">Interest</a></li>
+              <li><a href="#" class="destacado">Try Premium</a></li>
+            </ul>
+          </div>
+
+          <div class="separador iconos">
+            <i class="material-icons mensaje">
+              message
+            </i>
+
+            <i class="material-icons notificacion">
+              notifications
+            </i>
+
+            <i class="material-icons agregar">
+              person_add
+            </i>
+
+          </div>
+
+          <div class="separador avatar">
+            <img src="img/avatar.jpg" alt="">
+          </div>
+
+        </nav>
+      </div>
+      <nav class="navbar-secondary">
+        <div>
+          <ul>
+            <li><a href="#" class="active">Posts</a></li>
+            <li><a href="#">Background</a></li>
+            <li><a href="#">Recommendations</a></li>
+            <li><a href="#">Following</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="contenedor-contenido">
+
+      <aside class="sidebar-left">
+        <img src="img/bill-gates-avatar.png" alt="">
+        <h3>Bill Gates</h3>
+        <p class="small">Microsoft Founder</p>
+        <p class="location small">Greater Seattle Area</p>
+
+        <button value="Follow" class="button fill">Follow</button>
+        <button value="Follow" class="button outline">Connect <i class="material-icons">keyboard_arrow_down</i></button>
+
+        <div class="numeros">
+
+          <div>
+            <p>200</p>
+            <p>connections</p>
+          </div>
+
+          <div>
+            <p>1.9M</p>
+            <p>followers</p>
+          </div>
+
+        </div>
+
+        <div class="links">
+          <a href="#"><i class="material-icons">link</i> linkedin.com/billgates/profile</a>
+          <a href="#"><i class="material-icons">language</i> billgates.com</a>
+        </div>
+
+        <div class="export">
+          <a href="#"><i class="material-icons">picture_as_pdf</i> Export Page as PDF</a>
+        </div>
+
+
+      </aside>
+
+      <main>
+
+        <div class="latest-posts">
+          <div class="header">
+            <h3>POSTS</h3>
+            <div class="slider">
+              <i class="material-icons">keyboard_arrow_left</i>
+              <i class="material-icons">keyboard_arrow_right</i>
+            </div>
+          </div>
+
+          <div class="posts">
+            <article>
+              <img src="img/article1.jpg" alt="">
+              <h4>3 Myths that confuse top managers</h4>
+              <p>February 19, 2019</p>
+            </article>
+
+            <article>
+              <img src="img/article2.jpg" alt="">
+              <h4>How much do we spend on hot drinks</h4>
+              <p>February 24, 2019</p>
+            </article>
+
+            <article>
+              <img src="img/article3.jpg" alt="">
+              <h4>Good news you might have noticed</h4>
+              <p>February 27, 2019</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="background">
+          <h3>BACKGROUND</h3>
+
+          <div class="summary">
+            <div class="ico">
+              <i class="material-icons">assignment</i>
+            </div>
+
+            <div class="texto">
+              <h2>Summary</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id distinctio excepturi dolorum nostrum
+                fugiat natus aspernatur nihil animi labore corporis explicabo, pariatur dignissimos sapiente laborum
+                totam tempore, iusto ipsum delectus lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                distinctio excepturi dolorum nostrum fugiat natus aspernatur nihil animi labore corporis explicabo,
+                pariatur dignissimos sapiente laborum totam tempore, iusto ipsum delectus!</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <div class="ico">
+              <i class="material-icons">work</i>
+            </div>
+
+            <div class="texto">
+              <h2>Experience</h2>
+
+              <div class="puesto uno">
+                <p class="small">2000 - PRESENT</p>
+                <h4>Co-founder, Chairman</h4>
+                <a href="#">Microsoft</a>
+              </div>
+
+              <div class="puesto">
+                <p class="small">1992 - 1999</p>
+                <h4>Senior Developer</h4>
+                <a href="#">Youtube</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="education">
+            <div class="ico">
+              <i class="material-icons">account_balance</i>
+            </div>
+
+            <div class="texto">
+              <h2>Education</h2>
+
+              <div class="puesto uno">
+                <p class="small">1973 - 1975</p>
+                <h4>Harvard University</h4>
+                <a href="#">BS Computer Science</a>
+              </div>
+
+              <div class="puesto">
+                <p class="small">1960 - 1973</p>
+                <h4>Lakeside School, Seattle</h4>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="skills">
+            <div class="ico">
+              <i class="material-icons">done</i>
+            </div>
+
+            <div class="texto">
+              <h2>Skills</h2>
+
+
+              <div class="habilidad">
+                <span class="cantidad">74</span>
+                <p>Social Media Marketing</p>
+
+                <div class="users">
+                  <img src="img/avatar.jpg" alt="">
+                  <img src="img/avatar2.jpg" alt="">
+                  <img src="img/avatar3.jpg" alt="">
+                  <span class="restante">71+</span>
+                </div>
+              </div>
+
+              <div class="habilidad">
+                <span class="cantidad">67</span>
+                <p>Web Development</p>
+
+                <div class="users">
+                  <img src="img/avatar.jpg" alt="">
+                  <img src="img/avatar2.jpg" alt="">
+                  <img src="img/avatar3.jpg" alt="">
+                  <span class="restante">17+</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="interests">
+            <div class="ico">
+              <i class="material-icons">star</i>
+            </div>
+
+            <div class="texto">
+              <h2>Interests</h2>
+
+              <div class="intereses">
+                <p>Wireless Industry</p>
+                <p>Photography</p>
+                <p>Web Design</p>
+                <p>Technology</p>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div> <!-- CIERRE BACKGROUND -->
+
+        <div class="recommendations">
+          <div class="header">
+            <h3>RECOMMENDATIONS</h3>
+            <div class="slider">
+              <i class="material-icons">keyboard_arrow_left</i>
+              <i class="material-icons">keyboard_arrow_right</i>
+            </div>
+          </div>
+
+          <div class="recommendations-content">
+
+            <article>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem expedita deserunt cupiditate animi
+                esse pariatur eligendi deleniti saepe delectus quo, soluta doloremque incidunt, beatae nobis distinctio
+                sed ea reprehenderit minima.</p>
+              <div class="user">
+                <img src="img/avatar.jpg" alt="">
+                <p>Steve Jobs <br><span>Apple</span></p>
+              </div>
+            </article>
+
+            <article>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem expedita deserunt cupiditate animi
+                esse pariatur eligendi deleniti saepe delectus quo, soluta doloremque incidunt, beatae nobis distinctio
+                sed ea reprehenderit minima.</p>
+              <div class="user">
+                <img src="img/avatar.jpg" alt="">
+                <p>Steve Jobs <br><span>Apple</span></p>
+              </div>
+            </article>
+
+            <article>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem expedita deserunt cupiditate animi
+                esse pariatur eligendi deleniti saepe delectus quo, soluta doloremque incidunt, beatae nobis distinctio
+                sed ea reprehenderit minima.</p>
+              <div class="user">
+                <img src="img/avatar.jpg" alt="">
+                <p>Steve Jobs <br><span>Apple</span></p>
+              </div>
+            </article>
+
+          </div>
+        </div> <!-- CIERRE RECOMMENDATIONS-->
+
+
+        <div class="following">
+          <div class="header">
+            <h3>FOLLOWING</h3>
+          </div>
+
+          <div class="following-content">
+
+            <article>
+              <img src="img/logo-microsoft.png" alt="">
+              <p>Microsoft</p>
+              <a href="#"><i class="material-icons">add</i> Follow</a>
+            </article>
+
+            <article>
+              <img src="img/logo-microsoft.png" alt="">
+              <p>Microsoft</p>
+              <a href="#"><i class="material-icons">add</i> Follow</a>
+            </article>
+
+            <article>
+              <img src="img/logo-microsoft.png" alt="">
+              <p>Microsoft</p>
+              <a href="#"><i class="material-icons">add</i> Follow</a>
+            </article>
+
+            <article>
+              <img src="img/logo-microsoft.png" alt="">
+              <p>Microsoft</p>
+              <a href="#"><i class="material-icons">add</i> Follow</a>
+            </article>
+
+
+          </div>
+          <button value="" class="button outline see-all">See All (20)</button>
+
+
+        </div> <!-- CIERRE FOLLOWING-->
+
+
+      </main> <!-- CIERRE MAIN CONTENT-->
+
+
+      <aside class="sidebar-right">
+        <div class="people">
+          <h4>PEOPLE ALSO VIEWED</h4>
+
+          <div class="people-particular">
+            <img src="img/avatar.jpg" alt="">
+            <p>Sergey Brin <br><span>Google</span></p>
+          </div>
+
+          <div class="people-particular">
+            <img src="img/avatar.jpg" alt="">
+            <p>Sergey Brin <br><span>Google</span></p>
+          </div>
+
+          <div class="people-particular">
+            <img src="img/avatar.jpg" alt="">
+            <p>Sergey Brin <br><span>Google</span></p>
+          </div>
+
+        </div>
+
+        <div class="influencers">
+          <h4>MORE INFLUENCERS</h4>
+
+          <div class="influencer-particular">
+            <i class="material-icons">keyboard_arrow_left</i>
+            <div class="data">
+              <img src="img/avatar2.jpg" alt="">
+              <h2>Steve Jobs</h2>
+              <p class="small">Apple</p>
+            </div>
+            <i class="material-icons">keyboard_arrow_right</i>
+          </div>
+
+        </div>
+
+      </aside>
+
+
+
+
+    </div>
+    <footer>
+      LinkedIn Corporation © 2014
+    </footer>
+
+
+
+  </div>
+
+</body>
+
+</html>
