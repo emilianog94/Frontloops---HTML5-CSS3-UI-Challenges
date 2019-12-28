@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 3 - Step 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="contenedor-principal">
+    <div class="contenedor-producto">
+
+      <div class="left">
+
+        <img class="logo" src="img/logo.png" alt="">
+        <p>39</p>
+        <img class="producto" src="img/preview.png" alt="">
+        <div class="indicadores">
+          <span class="circulovioleta" id="circle1">+</span>
+          <span class="circulovioleta" id="circle2">+</span>
+          <span class="circulovioleta" id="circle3">+</span>
+        </div>
+        <div class="slide-controllers">
+          <div class="item"></div>
+          <div class="item active"></div>
+          <div class="item"></div>
+        </div>
+
+      </div> <!-- CIERRE LEFT-->
+
+      <div class="right">
+
+        <h1>Nike Flyknit</h1>
+        <div class="price">
+          <p class="precio-oferta">$189.00</p>
+          <p class="precio-regular">$259.00</p>
+        </div>
+        <p class="descripcion">With a flexible Flyknit upper placed directly on top of a radically reinvented Air
+          cushioning system, The
+          Nike Air VaporMax defies conventional style and provides an unbelievably light, bouncy and flexible feel.
+        </p>
+
+
+
+        <br><br>
+        <form action="" method="GET">
+          <div class="size">
+
+            <label for="size">Size</label>
+            <p>S</p>
+            <p>M</p>
+            <p>L</p>
+            <p>XL</p>
+            <p>XXL</p>
+
+            <input type="radio" name="size" id="size" value="S" hidden>
+            <input type="radio" name="size" id="size" value="M" hidden>
+            <input type="radio" name="size" id="size" value="L" hidden>
+            <input type="radio" name="size" id="size" value="XL" hidden>
+            <input type="radio" name="size" id="size" value="XXL" hidden>
+          </div>
+
+          <br>
+
+
+          <div class="amount">
+            <label for="amount">Amount</label>
+            <div class="amount-controller">
+              <span class="triangulo izquierda"></span>
+              <p>2</p>
+              <span class="triangulo derecha"></span>
+            </div>
+          </div>
+
+          <button type="submit">BUY NOW</button>
+
+        </form>
+
+      </div> <!-- CIERRE RIGHT-->
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

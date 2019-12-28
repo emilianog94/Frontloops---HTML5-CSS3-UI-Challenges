@@ -27,3 +27,5 @@ Step 8 - https://emilianog94.github.io/frontloops-markup-challenges/Loop02/Step8
 Step 9 - https://emilianog94.github.io/frontloops-markup-challenges/Loop02/Step9/index.html <br/>
 Step 10 - https://emilianog94.github.io/frontloops-markup-challenges/Loop02/Step10/index.html <br/> 
 
+### LOOP 3
+Step 1 - https://emilianog94.github.io/frontloops-markup-challenges/Loop03/Step1/index.html <br/>
