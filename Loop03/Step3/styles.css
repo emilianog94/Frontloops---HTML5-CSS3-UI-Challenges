@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Roboto',sans-serif;
+}
+
+.contenedor-principal{
+    background-color:#2980b9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+
+.pelicula{
+    padding:20px;
+    background-color:rgba(0,0,0,0);
+    color:rgba(0,0,0,0);
+    border-radius:5px;
+    transition:all 0.25s ease;
+    width:20%;
+    min-height:100px;
+    text-align:center;
+}
+
+.pelicula:hover{
+    background-color:#fff;
+    min-height:600px;
+    width:20%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+            }
+
+
+.pelicula a{
+    position:relative;
+    bottom:-20px;
+    left:-20px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    margin-top:25px;
+    color:rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+    text-decoration:none;
+    width:100%;
+    display:block;
+    padding:20px;
+    transition:all 0.25s ease;
+}
+
+.pelicula:hover a:hover{
+    background-color:#000
+}
+
+.pelicula:hover a{
+    background-color:#2f2f2f;
+    color:#fff;
+
+}
+
+
+.pelicula h2{
+    margin-top:-25px;
+}
+
+.pelicula:hover h2{
+    color:#000
+}
+
+.pelicula .precio{
+    font-weight:500;
+    font-size:1.5em;
+    margin-top:20px;
+}
+
+.pelicula:hover .precio{
+    color:#2bcd71;
+}
+
+.pelicula:hover .descripcion,.pelicula:hover .precio-tachado{
+    color:#b7adaa;
+}
+
+img{
+    cursor:pointer;
+    position:relative;
+    top:-40px;
+    z-index:2;
+    pointer-events: none;
+    max-width:300px;
+    visibility:visible;
+}

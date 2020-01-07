@@ -30,3 +30,4 @@ Step 10 - https://emilianog94.github.io/frontloops-markup-challenges/Loop02/Step
 ### LOOP 3
 Step 1 - https://emilianog94.github.io/frontloops-markup-challenges/Loop03/Step1/index.html <br/>
 Step 2 - https://emilianog94.github.io/frontloops-markup-challenges/Loop03/Step2/index.html <br/>
+Step 3 - https://emilianog94.github.io/frontloops-markup-challenges/Loop03/Step3/index.html <br/>
