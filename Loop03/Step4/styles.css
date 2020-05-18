@@ -1,0 +1,90 @@
+body{
+    margin:0;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-image:url('img/background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+.album-container{
+    width:400px;
+    height:400px;
+    position:relative;
+}
+
+/* Seteo en estado cero que no haya cambio de perspectiva */
+.album-img-container{
+    width:100%;
+    height:100%;
+    background-image:url('img/kanye.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    border-radius:10px;
+    transition:all 0.3s ease;
+    position:absolute;
+    transform-style:flat;
+    left:0;
+    top:0;
+    transform-origin:0;
+    transform:perspective(0) rotateY(0deg);
+    perspective:0px;
+    cursor:pointer;
+    transform-box:content-box;
+
+}
+
+/* Seteo en estado hover que haya transición de perspectiva */
+.album-img-container:hover{
+    perspective:1800px;
+    transform:perspective(1800px) rotateY(-45deg);
+}
+
+/* Mantengo la perspectiva cuando estoy haciendo hover en el sibling  */
+.album-buttons-container:hover ~ .album-img-container{
+    transform:perspective(1800px) rotateY(-45deg);
+}
+
+.album-buttons-container{
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    border-radius:10px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: start;
+    flex-direction:column;
+}
+
+.album-buttons-container svg:first-child{
+    margin-top:20px;
+}
+
+.album-buttons-container svg{
+    width:30px;
+    margin-bottom:15px;
+    transition:all 0.25s ease;
+    cursor:pointer;
+    margin-right:20px;
+}
+
+.album-buttons-container svg:hover{
+    fill:#000000;
+}
+
