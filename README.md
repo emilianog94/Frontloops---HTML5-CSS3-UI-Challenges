@@ -33,3 +33,4 @@ Step 2 - https://emilianog94.github.io/Frontloops---HTML5-CSS3-UI-Challenges/Loo
 Step 3 - https://emilianog94.github.io/Frontloops---HTML5-CSS3-UI-Challenges/Loop03/Step3/index.html <br/>
 Step 4 - https://emilianog94.github.io/Frontloops---HTML5-CSS3-UI-Challenges/Loop03/Step4/index.html <br/>
 Step 5 - https://emilianog94.github.io/Frontloops---HTML5-CSS3-UI-Challenges/Loop03/Step5/index.html <br/>
+Step 6 - https://emilianog94.github.io/Frontloops---HTML5-CSS3-UI-Challenges/Loop03/Step6/index.html <br/>

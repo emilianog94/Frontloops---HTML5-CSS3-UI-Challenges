@@ -8,7 +8,120 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
+<body>  
+  <div class="main-container">
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Customer Information</a></li>
+        <li><a href="#">Shipping Method</a></li>
+        <li class="active"><a href="#">Payment method</a></li>
+      </ul>
+    </div>
+    <div class="card-containers">
+      <div class="left-container">
+        <div class="card">
+          <h2>Payment information</h2>
+          <form action="" method="POST">
+  
+            <div class="form-row">
+              <div class="form-group">
+                <label for="">CARD NUMBER</label>
+                <input type="text" name="card_number" placeholder="**** **** **** ****">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group form-group-60">
+                <label for="">CARD HOLDER</label>
+                <input type="text" name="card_holder" value="Emiliano Gioia">
+              </div>
+  
+              <div class="form-group form-group-20">
+                <label for="">EXP. DATE</label>
+                <input type="text" name="date" value="03/19">
+              </div>
+  
+              <div class="form-group form-group-20">
+                <label for="">CVC</label>
+                <input type="number" name="cvc" placeholder="***">
+              </div>
+            </div>
+  
+          </form>
+  
+        </div>
+  
+        <div class="card">
+          <h2>Billing address</h2>
+          <form action="">
+            <div>
+              <input type="radio" name="billing" id="billing1">
+              <label class="radio" for="billing1">Same as the shipping address</label>
+            </div>
+            <hr class="separacion">
+            <div>
+              <input type="radio" name="billing" id="billing2">
+              <label class="radio" for="billing2">Use a different billing address</label>
+            </div>
 
+          </form>
+        </div>
+  
+        <div class="buttons">
+          <a href="#">Return to shipping method</a>
+          <button type="submit">Complete order</button>
+        </div>
+
+
+  
+      </div>
+  
+      <div class="right-container">
+        <div class="card">
+  
+          <div class="cart-row">
+            <div class="thumbnail-container">
+              <img class="product-thumbnail" src="img/order.jpg" alt="">
+              <span class="quantity">2</span>
+            </div>
+
+
+            <p>Chocolate bar</p>
+            <p class="price">$2.49</p>
+          </div>
+  
+          <hr class="separacion">
+  
+          <div class="cart-row">
+            <p>Subtotal</p>
+            <p class="price">$4.98</p>
+          </div>
+  
+          <div class="cart-row">
+            <p>Shipping</p>
+            <p class="price">$3.00</p>
+          </div>
+  
+          <hr class="separacion">
+  
+          <div class="cart-row final">
+            <p>Total</p>
+            <p class="price">$7.98</p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
+
+
+
+
+
+
 </html>
+
+
