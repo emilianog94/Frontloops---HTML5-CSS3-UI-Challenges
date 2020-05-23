@@ -21,3 +21,349 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+*{
+  font-family:'Roboto',sans-serif;
+  margin:0;
+}
+
+body{
+  background-color:#a3c5f3;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+
+header{
+  padding:15px 30px;
+  background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.7)) , url('./img/background.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+  min-height:180px;
+}
+
+header .temperature{
+  display:flex;
+  flex-direction:row;
+  text-align:center;
+  align-items:center;
+}
+
+header .temperature div:not(:first-child){
+  margin:0 15px;
+}
+
+header .temperature div:nth-child(2){
+  margin-left:25px;
+}
+
+header .temperature span{
+  font-size:1.3em;
+}
+
+
+header .temperature >div:first-child{
+  font-size:2.5em;
+}
+
+header .current-date{
+  display:flex;
+  align-items:flex-end;
+  flex-direction:row;
+}
+
+header .current-date > div:first-child{
+  color:#c8c9c8;
+  text-align:right;
+  margin-right:15px;
+  margin-bottom:15px;
+
+}
+
+header .current-date div:nth-child(2){
+  color:#fff;
+  font-weight:300;
+  font-size:4em;
+}
+
+header .current-date div:nth-child(2) span{
+  font-size:0.3em;
+  font-weight:400;
+}
+
+main{
+  background-color:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,0.02), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.02), 0 8px 16px rgba(0,0,0,0.02), 0 16px 32px rgba(0,0,0,0.02), 0 32px 64px rgba(0,0,0,0.02);
+  width:60%;
+  position:relative;
+  border-radius:5px;
+}
+
+main > section{
+  margin:40px 0 40px 60px;
+}
+
+.category.material-icons{
+  color:#a3c5f3;
+}
+
+.channel-list{
+  display:flex;
+  flex-direction:row;
+  align-items:baseline;
+}
+
+.channel-list a:not(:first-child){
+  margin-left:20px;
+}
+
+.channel-list a{
+  text-decoration:none;
+  color:#adadad;
+  transition:all 0.25s ease;
+}
+
+.channel-list a:hover{
+  color:#333;
+}
+
+.channel-list a.active{
+  color:#333333;
+  font-weight:bold;
+  font-size:1.4em;
+}
+
+.programs{
+  margin-left:40px;
+}
+
+.programs-row{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-top:30px;
+}
+
+.programs{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+
+.programs > div{
+  flex-grow:1;
+  flex-basis:0;
+}
+
+.programs .program-image{
+  margin-bottom:20px;
+  cursor:pointer;
+}
+
+.programs .program{
+  
+}
+
+.program .schedule{
+  color:#adadad;
+  font-size:0.9em;
+}
+
+.program p:last-child{
+  color:#000;
+  font-weight:500;
+}
+
+.program.active .program-image{
+  transform:scale(1.2);
+  z-index:2;
+}
+
+.programs .program .program-image{
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  height:120px;
+  -webkit-box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+}
+
+.program-image:after,.song img:after{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+  font-size:2em;
+  color:#fff;
+  background-color:rgba(0,0,0,0.5);
+  border-radius:100%;
+  padding:10px;
+  font-family: 'Material Icons';
+  content: "play_arrow";
+  -webkit-font-feature-settings: 'liga';
+  opacity:0;
+  transition:all 0.25s ease;
+}
+
+.program-image:hover:after,.song img:after{
+  opacity:1;
+}
+
+.programs .program:nth-child(1) .program-image{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.25)) , url('./img/video-local-programming.jpg');
+}
+
+.programs .program:nth-child(2) .program-image{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.25)) , url('./img/video-family-guy.jpg');
+}
+
+.programs .program:nth-child(3) .program-image{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.25)) , url('./img/video-simpsons.jpg');
+}
+
+.programs .program:nth-child(4) .program-image{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.25)) , url('./img/video-futurama.jpg');
+}
+
+.programs .program:nth-child(5) .program-image{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.25)) , url('./img/video-american-dad.jpg');
+}
+
+.divider{
+  border-top:1px solid #ccc;
+  border-bottom:0;
+  width:calc(100% + 60px);
+  margin:45px 0;
+  position:relative;
+  left:-60px;
+}
+
+.blue-stuff{
+  position:absolute;
+  left:50%;
+  top:-3px;
+  border-radius:10px;
+  transform:translateX(-50%);
+  width:20%;
+  height:5px;
+  background-color:#a3c5f3;
+}
+
+.music-grid{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.music-grid .player{
+  width:45%
+}
+
+.music-grid .songs{
+  width:45%;
+}
+
+.songs img{
+  width:130px;
+  -webkit-box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  margin-bottom:18px;
+  cursor:pointer;
+}
+
+
+.song.active img{
+  transform:scale(1.2);
+  z-index:2;
+}
+
+.player-cont{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.player p{
+  color:#adadad;
+  font-size:0.8em;
+}
+
+
+.player .player-bar{
+  width:80%;
+  height:3px;
+  background-color:#adadad;
+  border-radius:2px;
+  position:relative;
+}
+
+.player-bar:after{
+  width:30%;
+  display:block;
+  height:3px;
+  content:"";
+  background-color:#000;
+}
+
+.player .info{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.ball{
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  height: 25px;
+}
+
+.player .text{
+  margin-left:20px;
+}
+
+.player .text p:first-child{
+  font-weight:bold;
+  color:#000;
+  margin-bottom:5px;
+}
+
+.player .text p:nth-child(2){
+  color:#adadad;
+  font-size:0.8em;
+}
+
+.player img{
+  width:80px;
+  height:80px;
+  -webkit-box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 33px -13px rgba(0,0,0,0.75);
+  
+}
+
+.music-grid .songs{
+  display:flex;
+  flex-direction:row;
+  text-align:center;
+}
+
+.music-grid .songs >div:last-child{
+  overflow:hidden;
+}
