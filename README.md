@@ -1,5 +1,6 @@
 # Desafíos de Maquetado HTML5/CSS3 de Frontloops
-Resolución a todos los desafíos de HTML y CSS de Frontloops sin frameworks, utilizando estrictamente flexbox.
+Frontloops (https://frontloops.io/) es un conjunto de desafíos de interfaces utilizando puramente HTML Y CSS.
+En este repo voy a realizar los 30 desafíos de Frontloops desde cero implementando HTML5, CSS3, SASS y BEM.
 
 ### LOOP 1
 

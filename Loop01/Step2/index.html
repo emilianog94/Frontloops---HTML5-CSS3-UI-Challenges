@@ -6,43 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Loop 1 - Step 2</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./estilos.css" />
+
 </head>
 
 <body>
 
-  <div class="contenedor-principal">
+  <div class="mainContainer">
 
-    <div class="pasarela">
+    <div class="mainContainer__pasarela">
 
-      <div class="puntitos">
-        <div class="punto on"></div>
-        <div class="punto off"></div>
-        <div class="punto off"></div>
-      </div>
-      <h2>PAYMENT METHOD</h2>
-
-      <div class="opcion">
-        <img src="img/visa.svg" alt="">
-        <p>VISA</p>
+      <div class="pasarela__stepSelector">
+        <div class="stepSelector stepSelector--on"></div>
+        <div class="stepSelector"></div>
+        <div class="stepSelector"></div>
       </div>
 
-      <div class="opcion seleccionado">
-          <img src="img/mastercard.svg" alt="">
-          <p>MASTERCARD</p>
-          <img class="check" src="img/check.svg" alt="">
+      <h2 class="pasarela__title">PAYMENT METHOD</h2>
+
+      <div class="pasarela__opcion">
+        <img class="opcion__img" src="img/visa.svg" alt="Visa">
+        <p class="opcion__nombre">VISA</p>
       </div>
 
-        <div class="opcion">
-            <img src="img/maestro.svg" alt="">
-            <p>MAESTRO</p>
-        </div>
+      <div class="pasarela__opcion">
+          <img class="opcion__img" src="img/mastercard.svg" alt="Mastercard">
+          <p class="opcion__nombre opcion__nombre--active">MASTERCARD</p>
+          <img class="opcion_img--check" src="img/check.svg" alt="">
+      </div>
 
-        <a href="#">NEXT STEP <img class="flecha" src="img/arrow.svg" alt="">
-          <div class="boton">
-          </div>
-        </a>
+      <div class="pasarela__opcion">
+            <img class="opcion__img" src="img/maestro.svg" alt="Maestro">
+            <p class="opcion__nombre">MAESTRO</p>
+      </div>
+
+      <a href="#" class="pasarela__boton">
+          <span>NEXT STEP &nbsp;</span>
+          <img class="boton__flecha" src="img/arrow.svg" alt="">
+      </a>
     </div>
 
   </div>
