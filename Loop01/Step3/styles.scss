@@ -1,0 +1,119 @@
+body{
+    margin:0;
+}
+
+*{
+    font-family:'Roboto',sans-serif;
+}
+
+$verde:#16a085;
+$grisClaro:#ccc;
+$grisOscuro:#5c5c5c;
+$blanco:#fff;
+$negro:#000;
+
+@mixin boxShadow{
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.contenedorPrincipal{
+    background-color:$verde;
+    height:auto;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-start;
+
+    .contenedorBlanco{
+        width:90%;
+        padding:20px;
+        padding-bottom:180px;
+        background-color:$blanco;
+        margin:50px auto 0 auto;
+        border-radius:7px;
+        background-image:url('img/bicycle.png');
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:0% 250px;
+        @include boxShadow;
+
+
+        .orderHead{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+        
+            h3{
+                margin:0;
+                font-size:1.5em;
+                font-weight:700;
+            }
+        
+            img{
+                border:1px solid #ccc;
+                padding:10px;
+                border-radius:100px;
+                transition:all 0.25s ease;
+                cursor:pointer;
+        
+                &:hover{
+                    -webkit-box-shadow: 0px 0px 0px 8px rgba(240,240,240,1);
+                    -moz-box-shadow: 0px 0px 0px 8px rgba(240,240,240,1);
+                    box-shadow: 0px 0px 0px 8px rgba(240,240,240,1);        }
+            }
+        }
+        
+        .orderContent{
+            > p{
+                color:$grisClaro;
+            }
+        
+            .item{
+                display:flex;
+                justify-content:space-between;
+                font-size:1.1em;
+        
+                p{
+                    color:$negro;
+                    font-weight:bold;
+                }
+        
+                p:first-child{
+                    color:$grisOscuro;
+        
+                }
+            }
+        
+            .item.total{
+                p:first-child{
+                    font-weight:bold;
+                }
+            }
+        }
+
+    }
+}
+ 
+
+
+@media (min-width: 768px) {  
+    .contenedorPrincipal{
+        height:100vh;
+        display:flex;
+        align-items:center;
+
+
+        .contenedorBlanco{
+            width:600px;
+            box-sizing:border-box;
+            padding:70px 70px 200px 70px;
+            margin:0 auto;
+        }
+    }
+}
+
