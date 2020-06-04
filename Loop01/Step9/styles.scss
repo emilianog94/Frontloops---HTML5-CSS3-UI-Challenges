@@ -1,0 +1,214 @@
+/* GLOBAL STYLES */
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Roboto',sans-serif;
+}
+
+$md:768px;
+
+$white:#FFF;
+$lightGrey:#F2F2F2;
+$darkGrey:#CCC;
+$blue:#8793C6;
+$green:#9BD475;
+
+h3{
+    font-weight:500;
+    font-size:1.4em;
+    color:#333;
+}
+
+h3 span,p span{
+    position: relative;
+    top: -8px;
+    font-size: 0.7em;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius:50px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: rgba(0,0,0,0); 
+border-radius:50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #747475; 
+border-radius:10px;
+}
+
+@mixin flex($type){
+    display:flex;
+    flex-direction:$type;
+}
+
+
+/* CUSTOM STYLES */
+
+.main-container{
+    background-color:#F7CD75;
+    width:100%;
+    @include flex(row);
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:25px;
+    box-sizing:border-box;
+
+    @media(max-width:$md){    
+            width:100%;
+            padding:0px;
+    }
+
+    .card{
+        @include flex(row);
+        flex-wrap:wrap;
+        background-color:$white;
+        width:100%;
+        height:auto;
+        box-sizing:border-box;
+        border-radius:25px;
+
+        @media(min-width:$md){
+                height:400px;
+                width:50%;
+                flex-wrap:nowrap;
+        }
+
+        .left{
+            background-color:$lightGrey;
+            width:100%;
+            flex-basis:100%;
+            padding:45px 45px 5px 45px;
+            overflow-y:hidden;
+            box-sizing:border-box;
+
+            @media(min-width:$md){
+                    width:30%;
+                    flex-basis:30%;
+                    padding:45px 45px 5px 45px;
+            }
+
+            .header{
+                @include flex(row);
+                justify-content:space-between;
+
+                p{
+                    font-weight:700;
+                    font-size:1.4em;
+                }
+            }
+
+            .credit-card{
+                background-color:$white;
+                border:2px solid $darkGrey;
+                border-radius:8px;
+                padding:10px;
+                margin:20px 0;
+                transition:all 0.25s ease;
+                cursor:pointer;
+
+                img{
+                    width:80px;
+                }
+
+                & .active{
+                    border:2px solid $blue;
+                }
+
+                &:hover{
+                    border:2px solid $blue;
+                }
+            }
+            
+
+
+            &:hover{
+                overflow-y: overlay;
+            }
+            
+
+
+        }
+        
+        .right{
+            background-color:$white;
+            width:100%;
+            flex-basis:100%;
+            padding:45px 45px 5px 45px;
+            box-sizing:border-box;
+            overflow-y:hidden;
+
+            @media(min-width:$md){
+                width:70%;
+                flex-basis:70%;
+                padding:45px 45px 5px 45px;
+            }
+
+            .header{
+                padding-bottom:30px;
+                border-bottom:1px solid $darkGrey;
+            }
+
+            .item{
+                @include flex(row);
+                justify-content:flex-start;
+                align-items:center;
+                margin:30px 0;
+
+                img{
+                    margin-right:25px;
+                    border:1px solid $darkGrey;
+                    border-radius:100%;
+                    padding:2px;
+                    width:15px;
+                    cursor:pointer;
+                }
+
+                &> p{
+                    margin-left:auto;
+                    font-weight:700;
+                    font-size:1em;
+                }
+
+                &.sale > p{
+                    color:$green;
+                }
+
+                &.purchase > p{
+                    color:$blue;
+                }
+
+                .item-title{
+
+
+                    p:first-child{
+                        font-size:1.1em;
+                        font-weight:700;
+                        color:#333;
+                    }
+
+                    p:last-child{
+                        font-size:0.8em;
+                        margin-top:5px;
+                        color:#B5B5B5;
+                    }
+                }
+            }
+
+        
+            &:hover{
+                overflow-y: overlay;
+            }
+        }
+
+    }
+
+}
