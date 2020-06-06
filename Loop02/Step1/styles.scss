@@ -1,0 +1,233 @@
+body{
+    overflow-x:hidden;
+}
+
+*{
+    font-family:'Roboto',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+@mixin flex($type){
+    display:flex;
+    flex-direction:$type;
+}
+
+$sm:768px;
+
+.main-container{
+    width:100%;
+    min-height:100vh;
+    background-color:#DE8A89;
+    @include flex(row);
+    justify-content:center;
+
+    .secondary-container{
+        width:90%;
+
+        @media(min-width:$sm){
+            width:60%;
+        }
+
+        .cloth-type{
+            @include flex(column);
+            flex-wrap:wrap;
+            margin-top:20px;
+
+            @media(min-width:$sm){
+                @include flex(row);
+                flex-wrap:nowrap;
+                margin-top:150px;
+            }
+
+            h2{
+                margin-left:0;
+                font-size:2em;
+                color:rgba(255,255,255,0.5);
+                transition:all 0.25s ease;
+                cursor:pointer;
+
+                &:hover{
+                    color:rgba(255,255,255,0.75)
+                }
+
+                &.active{
+                    color:rgba(255,255,255,1);
+                }
+
+                @media(min-width:$sm){
+                    margin-left:30px;
+                    font-size:6em;
+
+                    &:first-child{
+                        margin-left:0;
+                    }
+                }
+            }
+
+             
+        }
+
+        .cloth-description{
+            margin-top:30px;
+
+            @media(min-width:$sm){
+                margin-top:0px;
+            }
+
+            p{
+                color:#fff;
+                font-weight:400;
+                font-size:1.1em;
+                line-height:1.5em;
+                width:70%;
+            }
+        }
+
+        .cta#mobile{
+            display:none;
+        }
+
+        .slider{
+            margin-top:50px;
+            position:relative;
+
+            .cloth-instructions{
+                @include flex(column);
+                align-items:center;
+                justify-content:center;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+                &:after,&:before{
+                    display:none;
+                }
+
+                @media(min-width:$sm){
+                    @include flex(row);
+                    align-items:center;
+                    justify-content:center;
+
+                    &::before,&::after{
+                        background-color:rgba(255,255,255,0.75);
+
+                    }
+
+                    &:before{
+                        content:"◀";
+                        display:inline-block;
+                        text-align:center;
+                        width:100px;
+                        padding-top:45px;
+                        padding-bottom:45px;
+                        background-color:rgba(255,255,255,0.5);
+                        color:rgba(0,0,0,0.5);
+                        position:absolute;
+                        left:-100px;
+                        top:0;
+                        cursor:pointer;
+                        transition:all 0.25s ease;
+                        z-index:2;
+                    }
+
+                    &:after{
+                        content:"▶";
+                        display:inline-block;
+                        text-align:center;
+                        width:100px;
+                        padding-top:45px;
+                        padding-bottom:45px;
+                        background-color:rgba(255,255,255,0.5);
+                        color:rgba(0,0,0,0.5);
+                        position:absolute;
+                        right:-100px;
+                        top:0;
+                        cursor:pointer;
+                        transition:all 0.25s ease;
+                        z-index:2;
+                    }
+                }
+
+                .col{
+                    @include flex(column);
+                    flex-basis:0;
+                    flex-grow:1;
+                    width:100%;
+                    padding:40px;
+                    min-height:auto;
+                    box-sizing: border-box;
+                    justify-content:center;
+
+                    @media(min-width:$sm){
+                        flex-basis:0;
+                        flex-grow:1;
+                        padding:80px;
+                        min-height:350px;
+                        box-sizing: border-box;
+                        @include flex(column);
+                        justify-content:center;
+                    }
+
+                    &:first-child{
+                        background-color:#3E3C3D;
+                        position:relative;
+                    }
+
+                    &:nth-child(2){
+                        background-color:#353334;
+                    }
+
+                    &:last-child{
+                        background-color:#201E1F;
+                    }
+
+                    .title{
+                        color:#DE8A89;
+                        font-size:1.5em;
+                    }
+
+                    .data{
+                        color:#fff;
+                        margin-top:10px;
+                        font-size:2.5em;
+                        font-weight:bold;
+                    }
+
+
+
+                    .cta{
+                        display:none;
+
+                        @media(min-width:$sm){
+                            display:block;
+                            position:absolute;
+                            bottom:-25px;
+                            left:10%;
+                            width:80%;
+                            background-color:#131313;
+                            border-radius:5px;
+                            padding-top:20px;
+                            padding-bottom:20px;
+                            text-align:center;
+                            text-decoration:none;
+                            color:#fff;
+                            transition:all 0.25s ease;
+
+                            &:hover{
+                                bottom:-18px;
+                            }
+                        }
+                    }
+
+
+
+
+
+                    }
+                    
+
+                }
+            }
+        }
+
+}
+
