@@ -1,155 +1,151 @@
-*{
-    margin:0;
-    padding:0;
-    font-family:'Roboto',sans-serif;
-    color:#fff;
-    font-size:1.02em;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+  color: #fff;
+  font-size: 1.02em;
 }
 
-.contenedor-principal{
-    width:100%;
-    min-height:100vh;
-    background: rgb(126,130,226);
-    background: linear-gradient(0deg, rgba(126,130,226,1) 0%, rgba(184,132,229,1) 100%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-sizing:border-box;
-    padding:15px 0;
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #7e82e2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#7e82e2), to(#b884e5));
+  background: linear-gradient(0deg, #7e82e2 0%, #b884e5 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 0;
 }
 
-.modulo{
-    width:90%;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                0 2px 4px rgba(0,0,0,0.07), 
-                0 4px 8px rgba(0,0,0,0.07), 
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07), 
-                0 32px 64px rgba(0,0,0,0.07);
+.main-container .module {
+  width: 90%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
-.tab-header,.tab-content{
-    padding-left:20px;
-    padding-right:20px;
+@media (min-width: 768px) {
+  .main-container .module {
+    width: 40%;
+  }
 }
 
-.tab-header{
-    background: rgb(187,126,218);
-    background: linear-gradient(90deg, rgba(187,126,218,1) 0%, rgba(167,121,209,1) 100%);
-    padding-top:30px;
-    padding-bottom:20px;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items: center;
-    position:relative;
+@media (min-width: 992px) {
+  .main-container .module {
+    width: 30%;
+  }
 }
 
-
-.tab-content{
-    background-color:#5f5280;
-    position:relative;
+@media (min-width: 1192px) {
+  .main-container .module {
+    width: 20%;
+  }
 }
 
-.tab-header img.arrow{
-    margin-left:auto;
+.main-container .module .tab .tab-header {
+  background: #bb7eda;
+  background: -webkit-gradient(linear, left top, right top, from(#bb7eda), to(#a779d1));
+  background: linear-gradient(90deg, #bb7eda 0%, #a779d1 100%);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
-
-
-.tab-header img.ico{
-    background-color: #fff;
-    border-radius: 100%;
-    padding: 5px;
-    width:15px;
-    height:15px;
-    margin-right:12px;
-    position:relative;
-    z-index:1;
+.main-container .module .tab .tab-header:before {
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  left: 32px;
+  top: 0;
+  z-index: 0;
 }
 
-.tab-header:before{
-    content: "";
-    width: 2px;
-    height: 30px;
-    background-color:#fff;
-    display: block;
-    position:absolute;
-    left:32px;
-    top:0;
-    z-index:0;
+.main-container .module .tab .tab-header img.arrow {
+  margin-left: auto;
 }
 
-
-.tab-content p:before{
-    content:"";
-    width:7px;
-    height:7px;
-    display:inline-block;
-    background-color:#fff;
-    border-radius:100%;
-    margin-right:20px;
-    margin-left:10px;
-    -webkit-box-shadow: 0px 0px 0px 7px rgba(95,82,128,1);
-    -moz-box-shadow: 0px 0px 0px 7px rgba(95,82,128,1);
-    box-shadow: 0px 0px 0px 7px rgba(95,82,128,1);
-    position:relative;
-    z-index:1;
+.main-container .module .tab .tab-header img.ico {
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  position: relative;
+  z-index: 1;
 }
 
-.tab-content:before{
-    content:"";
-    width:2px;
-    height:100%;
-    background-color:rgba(255,255,255,0.5);
-    display:block;
-    position:absolute;
-    left:32px;
-    top:0;
-    z-index:0;
+.main-container .module .tab .tab-content {
+  background-color: #5f5280;
+  position: relative;
 }
 
-.tab-content p{
-    padding-top:20px;
-    padding-bottom:20px;
-    color:rgba(255,255,255,0.75);
-    transition:all 0.25s ease;
-    cursor:pointer;
+.main-container .module .tab .tab-content:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  position: absolute;
+  left: 32px;
+  top: 0;
+  z-index: 0;
 }
 
-.tab-content p:hover{
-    color:#fff;
+.main-container .module .tab .tab-content p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  cursor: pointer;
 }
 
-
-@media screen and (min-width:768px){
-
-    .modulo{
-        width:40%;
-
-    }
-
-
+.main-container .module .tab .tab-content p:hover {
+  color: #fff;
 }
 
-
-
-@media screen and (min-width:996px){
-
-    .modulo{
-        width:30%;
-
-    }
-
-
+.main-container .module .tab .tab-content p:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 0px 0px 7px #5f5280;
+  box-shadow: 0px 0px 0px 7px #5f5280;
+  position: relative;
+  z-index: 1;
 }
 
-@media screen and (min-width:1192px){
-
-    .modulo{
-        width:20%;
-
-    }
-
-
+.main-container .module .tab .tab-header, .main-container .module .tab .tab-content {
+  padding-left: 20px;
+  padding-right: 20px;
 }
+/*# sourceMappingURL=styles.css.map */

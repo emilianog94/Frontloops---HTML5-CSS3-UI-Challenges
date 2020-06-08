@@ -1,152 +1,157 @@
-*{
-    margin:0;
-    padding:0;
-    font-family:'Roboto',sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
 }
 
-.contenedor-principal{
-    width:100%;
-    height:100vh;
-    background-image:url('img/background.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-
-    /*
-    background: 
-        linear-gradient(
-        rgba(236,200,67,0.85),
-        rgba(236,200,67,0.85)  
-        /*  rgba(255, 0, 0, 0.85) 
-        ),
-        url(img/background.jpg);
-        background-repeat:no-repeat;
-        background-size:30% , cover;
-        background-position:right,right;
-    */
-
-    display:flex;
-    padding:15px;
-    box-sizing:border-box;
-    position:relative;
-
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
 }
 
-.steps{
-    color:#fff;
-    display:flex;
-    height:100%;
-    flex-direction:column;
-    justify-content:space-between;
-    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-    cursor:pointer;
+.main-container .steps {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
-.steps p{
-    font-size:1.2em;
+.main-container .steps .step-up, .main-container .steps .step-down {
+  text-align: center;
 }
 
-.nota{
-    display:flex;
-    flex-direction:column;
-    height:100%;
-    width:100%;
-    justify-content:space-between;
-    align-items:center;
-    cursor:pointer;
-    margin-left:auto;
-    position:relative;
-    z-index:100;
-    position:absolute;
-    top:0;
-    left:0;
+.main-container .steps p {
+  font-size: 1.2em;
 }
 
-
-.read,.views{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    font-size:1.2em;
+.main-container .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.read img{
-    margin-left:10px;
+@media (min-width: 768px) {
+  .main-container .post {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: auto;
+    position: relative;
+    position: relative;
+    width: auto;
+  }
 }
 
-.views p{
-    margin-left:10px;
+.main-container .post .read, .main-container .post .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em;
 }
 
-
-.step-up,.step-down{
-    text-align:center;
+.main-container .post .read img {
+  margin-left: 10px;
 }
 
-.title{
-    position:absolute;
-    z-index:1;
-    right:0;
-    top:50px;
-    font-size:2em;
-    width:100%;
-    text-align:center;
+.main-container .post .views p {
+  margin-left: 10px;
 }
 
-.title span{
-    font-size:4em;
-    font-weight:400;
+.main-container .title {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50px;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
 }
 
-.title h2{
-    font-weight:500;
+@media (min-width: 768px) {
+  .main-container .title {
+    right: 25px;
+    top: 50%;
+    font-size: 2em;
+    width: 30%;
+    text-align: right;
+  }
 }
 
-.forma-amarilla{
-    position:absolute;
-    right:0;
-    top:0;
-    width: 100%;
-    height:100%;
-    background:rgba(236,200,67,0.85);
-    -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-
+.main-container .title h2 {
+  font-weight: 500;
 }
 
-@media screen and (min-width:768px){
-    .forma-amarilla{
-        position:absolute;
-        right:0;
-        top:0;
-        width: 40%;
-        height:100%;
-        background:rgba(236,200,67,0.85);
-        -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 1% 100%);
-        clip-path: polygon(52% 0, 100% 0, 100% 100%, 1% 100%);
-    }
-
-    .title{
-        position:absolute;
-        right:25px;
-        top:50%;
-        font-size:2em;
-        width:30%;
-        text-align:right;
-    }
-
-    .nota{
-        display:flex;
-        flex-direction:column;
-        height:100%;
-        justify-content:space-between;
-        align-items:flex-end;
-        cursor:pointer;
-        margin-left:auto;
-        position:relative;
-        z-index:100;
-        position:relative;
-        width:auto;
-    }
-    
-
+.main-container .title span {
+  font-size: 4em;
+  font-weight: 400;
 }
+
+.main-container .yellow-shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 200, 67, 0.85);
+  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (min-width: 768px) {
+  .main-container .yellow-shape {
+    width: 40%;
+    -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 1% 100%);
+    clip-path: polygon(52% 0, 100% 0, 100% 100%, 1% 100%);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
