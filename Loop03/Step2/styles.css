@@ -4,185 +4,233 @@
   display: none;
 }
 
-*{
-  margin:0;
-  padding:0;
-  font-family:'Roboto',sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
 }
 
-.contenedor-principal{
-  background-color:#293146;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
+.main-container {
+  background-color: #293146;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
-.card{
-  width:70%;
-  background-color:#fff;
-  border-radius:8px;
-  margin:10px;
-  display:flex;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-  0 2px 4px rgba(0,0,0,0.07), 
-  0 4px 8px rgba(0,0,0,0.07), 
-  0 8px 16px rgba(0,0,0,0.07),
-  0 16px 32px rgba(0,0,0,0.07), 
-  0 32px 64px rgba(0,0,0,0.07);
+.main-container .card {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
-.menu svg{
-  width:32px;
-  height:32px;
-  margin-bottom:20px;
-  padding-right:30px;
-  padding-left:30px;
-  fill:#dadada;
-  cursor:pointer;
-  transition:all 0.25s ease;
-  border-right:2px solid rgba(0,0,0,0);
+.main-container .card .left-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+  margin-right: 50px;
 }
 
-.menu svg:hover{
-  fill:#668ef8;
-  border-right:2px solid #668ef8;
+.main-container .card .left-sidebar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #ccc;
 }
 
-.menu svg:first-child{
-  margin-bottom:40px;
+.main-container .card .left-sidebar .menu svg {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  fill: #dadada;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-right: 2px solid rgba(0, 0, 0, 0);
 }
 
-.menu svg.active{
-  fill:#668ef8;
+.main-container .card .left-sidebar .menu svg:hover {
+  fill: #668ef8;
+  border-right: 2px solid #668ef8;
 }
 
-.overlay{
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.main-container .card .left-sidebar .menu svg:first-child {
+  margin-bottom: 40px;
 }
 
-.overlay svg{
-  width:35px;
-  height:35px;
-  margin:10px;
-  fill:#fff;
+.main-container .card .left-sidebar .menu svg.active {
+  fill: #668ef8;
 }
 
-.left-sidebar{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-between;
-  padding:25px 0;
-  margin-right:50px;
+.main-container .card .left-sidebar .avatar img {
+  border-radius: 100%;
+  border: 2px solid #668ef8;
+  width: 50px;
 }
 
-.left-sidebar .menu{
-  display:flex;
-  flex-direction:column;
-  border-right:1px solid #ccc;
+.main-container .card .right {
+  padding: 25px 25px 25px 0;
+  width: 100%;
 }
 
-.avatar img{
-  border-radius:100%;
-  border:2px solid #668ef8;
-  width:50px;
+.main-container .card .right .quantity p {
+  color: #aaaaaa;
 }
 
-.right{
-  padding:25px 25px 25px 0;
-  width:100%;
+.main-container .card .right h1 {
+  font-size: 4em;
 }
 
-.quantity p{
-  color:#aaaaaa;
+.main-container .card .right .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
 }
 
-.right h1{
-  font-size:4em;
+.main-container .card .right .header a {
+  color: #668ef8;
+  padding: 6px 35px;
+  border: 1px solid #668ef8;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.right .header{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:25px;
+.main-container .card .right .header a:hover {
+  border: 2px solid #668ef8;
 }
 
-.right .header a{
-  color:#668ef8;
-  padding:6px 35px;
-  border:1px solid #668ef8;
-  text-decoration:none;
-  font-weight:500;
-  transition:all 0.25s ease;
+.main-container .card .right .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.right .header a:hover{
-  border:2px solid #668ef8;
+.main-container .card .right .grid .square {
+  width: 30%;
+  background-position: 50%;
 }
 
-.grid{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:space-between;
+.main-container .card .right .grid .rectangle {
+  width: 65%;
 }
 
-.grid .square{
-  width:30%;
+.main-container .card .right .grid .square, .main-container .card .right .grid .rectangle {
+  background-size: cover;
 }
 
-.grid .rectangle{
-  width:65%;
+.main-container .card .right .grid .square .overlay, .main-container .card .right .grid .rectangle .overlay {
+  opacity: 0;
+  background-color: rgba(102, 142, 248, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.grid div{
-  height:210px;
-  margin-bottom:20px;
-  cursor:pointer;
+.main-container .card .right .grid .square .overlay:hover, .main-container .card .right .grid .rectangle .overlay:hover {
+  opacity: 1;
 }
 
-.overlay{
-  opacity:0;
-  background-color:rgba(102, 142, 248,0.5);
-  transition:all 0.25s ease;
+.main-container .card .right .grid .square .overlay svg, .main-container .card .right .grid .rectangle .overlay svg {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  fill: #fff;
 }
 
-.overlay:hover{
-  opacity:1;
+.main-container .card .right .grid div {
+  height: 210px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-#square-1{
-  background-image:url('img/1.jpg');
-  background-position:50%;
-  background-size:cover;
+.main-container .card .right .grid #square-1 {
+  background-image: url("img/1.jpg");
 }
 
-
-#rectangle-1{
-  background-image:url('img/2.jpg');
-  background-size:cover;
+.main-container .card .right .grid #rectangle-1 {
+  background-image: url("img/2.jpg");
 }
 
-#square-3{
-  background-image:url('img/3.jpg');
-  background-position:50%;
-  background-size:cover;
+.main-container .card .right .grid #square-3 {
+  background-image: url("img/3.jpg");
 }
 
-#square-4{
-  background-image:url('img/4.jpg');
-  background-position:50%;
-  background-size:cover;
+.main-container .card .right .grid #square-4 {
+  background-image: url("img/4.jpg");
 }
 
-#square-5{
-  background-image:url('img/5.jpg');
-  background-position:50%;
-  background-size:cover;
+.main-container .card .right .grid #square-5 {
+  background-image: url("img/5.jpg");
 }
-
+/*# sourceMappingURL=styles.css.map */
